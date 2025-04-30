@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(2, 2, 48);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    margin: 40vh 0;
+    padding: 0;
+}
+
+body p {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
