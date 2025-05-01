@@ -12,12 +12,30 @@ function getComputerChoice() { // function to get the computer's choice
 
 // Create a function to get the human's choice
 
-function getHumanChoice() { // function to get the human's choice
-    let choice = prompt("Enter your choice (rock, paper, scissors): ");
-    return choice;
-}
+// function getHumanChoice() { // function to get the human's choice
+//     let choice = prompt("Enter your choice (rock, paper, scissors): ");
+//     return choice;
+// }
 
 // console.log(getHumanChoice()); 
+
+//event listeners for the buttons
+
+const btnRock = document.querySelector('.rock');
+const btnPaper = document.querySelector('.paper');
+const btnScissors = document.querySelector('.scissors');
+
+btnRock.addEventListener('click', function() {
+    playRound('rock', computerChoice);
+});
+
+btnPaper.addEventListener('click', function() {
+    playRound('paper', computerChoice);
+});
+
+btnScissors.addEventListener('click', function() {
+    playRound('scissors', computerChoice);
+});
 
 // global variables to keep track of the score
 
@@ -55,26 +73,23 @@ function playRound(humanChoice, computerChoice) { //function to play a round
     
 }
 
-// create a function to check if player has won the round
-
-
 
 // Create a function to play the game
 
-function playGame() { // function to play the game
-    for (let i = 0; i < 5; i++) {
-        const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
-        playRound(humanSelection, computerSelection);
-        console.log("Round " + (i+1) + ": Your score: " + hunmanScore + " Computer score: " + computerScore);
-    }
-    if (hunmanScore > computerScore) {
-        console.log("You win the game!");
-    } else if (hunmanScore < computerScore) {
-        console.log("You lose the game!");
-    } else {
-        console.log("It's a tie!");
-    }
-}
+// function playGame() { // function to play the game
+//     for (let i = 0; i < 5; i++) {
+//         const humanSelection = getHumanChoice();
+//         const computerSelection = getComputerChoice();
+//         playRound(humanSelection, computerSelection);
+//         console.log("Round " + (i+1) + ": Your score: " + hunmanScore + " Computer score: " + computerScore);
+//     }
+//     if (hunmanScore > computerScore) {
+//         console.log("You win the game!");
+//     } else if (hunmanScore < computerScore) {
+//         console.log("You lose the game!");
+//     } else {
+//         console.log("It's a tie!");
+//     }
+// }
 
-playGame();
+// playGame();
