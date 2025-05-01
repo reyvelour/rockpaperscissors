@@ -14,3 +14,23 @@ body p {
     text-align: center;
     margin-top: 20px;
 }
+
+button {
+    width: 200px;
+    height: 100px;
+    color: white;
+    background-color: rgb(2, 2, 48);
+    border: 2px solid white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+
+.display {
+    height: 100px;
+    background-color: rgb(5, 2, 46);
+    margin: 20px auto;
+    width: 800px;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+}
