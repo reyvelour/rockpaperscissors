@@ -1,16 +1,24 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 body {
     background-color: rgb(2, 2, 48);
     font-family: 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
     font-size: 5rem;
-    margin: 40vh 0;
-    padding: 0;
+    margin: 0;
+    padding: 30vh 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 body p {
     font-size: 2rem;
-    color: white;
+    color: rgb(2,2, 48);
     text-align: center;
     margin-top: 20px;
 }
@@ -33,4 +41,7 @@ button {
     border: 2px solid white;
     color: white;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
